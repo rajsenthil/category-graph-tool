@@ -1,0 +1,32 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.divvet.store'
+version = '0.0.1'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-batch'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// Spring-Batch-Integration
+	implementation group: 'org.springframework.batch', name: 'spring-batch-integration', version: '4.3.3'
+
+	//Lombok
+	compileOnly "org.projectlombok:lombok:1.18.12"
+	annotationProcessor "org.projectlombok:lombok:1.18.12"
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.batch:spring-batch-test'
+}
+
+test {
+	useJUnitPlatform()
+}

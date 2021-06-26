@@ -1,0 +1,11 @@
+server:
+  port: 8104
+spring:
+  application:
+    name: CATALOG-GRAPH-TOOL
+  profiles.actives: "development"
+  namespace: divvet-dev
+
+inputCsvFile: file:///home/senthil/app/category-graph-tool/src/main/resources/simpl.csv
+delimiter: "|"
+names: id, value
