@@ -44,7 +44,8 @@ public class AsyncBatchProcessor {
     public FlatFileItemReader<Vertex> fileVertexReader(
             @Value("${inputCsvFile}") Resource resource) {
         return new FlatFileItemReaderBuilder<Vertex>()
-                .saveState(false)
+                .name("prod-definition")
+                .saveState(true)
                 .resource(resource)
                 .lineMapper(customLineMapper).build();
 /*

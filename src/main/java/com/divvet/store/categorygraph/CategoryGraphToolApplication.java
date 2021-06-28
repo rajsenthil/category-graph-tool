@@ -29,6 +29,7 @@ public class CategoryGraphToolApplication {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
+
 /*
 
 	@Bean

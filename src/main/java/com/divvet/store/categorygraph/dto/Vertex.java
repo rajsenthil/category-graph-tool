@@ -11,7 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 public class Vertex {
     Long id;
-    String value;
     String name;
     List<Vertex> children;
 }
