@@ -48,20 +48,6 @@ public class AsyncBatchProcessor {
                 .saveState(true)
                 .resource(resource)
                 .lineMapper(customLineMapper).build();
-/*
-        return new FlatFileItemReaderBuilder<Vertex>()
-                .saveState(false)
-                .resource(resource)
-                .lineTokenizer(getLineTokenizer())
-                .fieldSetMapper(fieldSet -> {
-                    Vertex vertex = new Vertex();
-                    vertex.setId(Long.parseLong(fieldSet.readString("id")));
-                    vertex.setName(fieldSet.readString("name"));
-                    vertex.setVerticesText(fieldSet.readString("verticesText"));
-
-                    return vertex;
-                })
-                .build();*/
     }
 
     @Bean
