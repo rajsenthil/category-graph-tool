@@ -6,6 +6,7 @@ spring:
   profiles.actives: "development"
   namespace: divvet-dev
 
-inputCsvFile: file:///home/senthil/app/category-graph-tool/src/main/resources/simpl.csv
+inputCsvFile: file:///home/senthil/app/category-graph-tool/src/main/resources/taxonomy-input.csv
 delimiter: "|"
 names: id, value
+rest_url: "http://localhost:8102/category"
