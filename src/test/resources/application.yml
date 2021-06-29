@@ -9,3 +9,4 @@ spring:
 inputCsvFile: file:///home/senthil/app/category-graph-tool/src/main/resources/simpl.csv
 delimiter: "|"
 names: id, value
+rest_url: "http://localhost:8102/category"
